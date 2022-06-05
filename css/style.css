@@ -1,0 +1,197 @@
+/*
+Colors used:
+
+Primary Color (DarkBrown): #270810;
+Primary Color (DarkOrange): #482608;
+Primary  Color (Dark Green): #181E19;
+
+Secondary Color (Turquoise): #49666D;
+Secondary Color (Green): #7C9885;
+Secondary Color (LimeGreen): #B5B682;
+Secondary Color (Coral): #D6B8A2;
+Secondary Color (White): #FFFFFF;
+*/
+
+
+body {
+  background-color: #ffffff;
+  font-family: 'IBM+lex+Sans+Thai+Looped', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #181E19;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+
+a {
+  color: #270810;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #270810;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color: #D6B8A2;
+}
+a:active { /* selected link */
+  color: #270810;
+}
+
+a:hover,
+a:focus {
+  color: #270810;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #270810;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #transparent; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 1.0; /* 100% opacity% */
+  text-decoration: none;
+}
+
+.button.roota {
+  background-color: #270810;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #270810;
+}
+
+.button.roota:hover {
+  background-color: #270810;
+  color: #ffffff;
+  opacity: 0.70; /* 100% opacity% */
+}
+
+.button.contact {
+  background-color: #270810;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #270810;
+}
+
+.button.contact:hover {
+  background-color: #270810;
+  color: #ffffff;
+  opacity: 0.70; /* 100% opacity% */
+}
+
+#contact {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+
+.button.resume {
+  background-color: 270810;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #transparent;
+}
+
+.button.resume:hover {
+  background-color: #270810;
+  color: #ffffff;
+  opacity: 0.70; /* 100% opacity% */
+}
+
+#resume {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+
+#hero-work {
+  background-color: #270810;
+  padding: 20px 0;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
+
+#hero-about {
+  background-color: #270810;
+  padding: 20px 0;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+}
+
+#hero-contact {
+  background-color: #270810;
+  padding: 20px 0;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+}
+
+#social {
+  display: flex;
+  list-style-type: none;
+  width: 50px;
+  justify-content: left;
+  margin: 0 auto;
+}
+
+
+#skills {
+  text-align: left;
+  margin: 0px;
+}
+
+#copyright {
+  font-size: 16px;
+  text-align: left;
+}
+
+#work.row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #270810;
+}
+
+#intro {
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.60em 0;
+}
