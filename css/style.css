@@ -13,13 +13,37 @@ Secondary Color (White): #FFFFFF;
 */
 
 
+header {
+  background-color: #B5B682;
+  margin-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  display: block;
+  padding: 10px 0 4px;
+  margin-top: 0px;
+}
+
+
 body {
   background-color: #ffffff;
   font-family: 'IBM+lex+Sans+Thai+Looped', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #181E19;
+  color: #270810;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-top: 0px;
+}
+
+p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 0px;
 }
 
 h1, h2, h3, h4 {
@@ -28,24 +52,63 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  background-color: #270810;
+  margin-bottom: 10px;
+  position:
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: center;
+
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  position:
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-top: 0px;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  border-bottom: 3px solid #270810
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  position:
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-top: 0px;
 }
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-top: 0px;
 }
 
 img {
   width: 100%;
+
 }
 
 
@@ -55,7 +118,7 @@ a {
 }
 a:hover {
   color: #270810;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 
 a:visited { /* visited link */
@@ -68,7 +131,7 @@ a:active { /* selected link */
 a:hover,
 a:focus {
   color: #270810;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .button {
@@ -76,8 +139,11 @@ a:focus {
   background-color: #270810;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
   border-bottom: 2px solid #transparent; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -92,6 +158,11 @@ a:focus {
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #270810;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
 }
 
 .button.roota:hover {
@@ -105,6 +176,11 @@ a:focus {
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #270810;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
 }
 
 .button.contact:hover {
@@ -113,11 +189,7 @@ a:focus {
   opacity: 0.70; /* 100% opacity% */
 }
 
-#contact {
-  text-align: left;
-  display: flex;
-  justify-content: left;
-}
+
 
 .button.resume {
   background-color: 270810;
@@ -132,11 +204,17 @@ a:focus {
   opacity: 0.70; /* 100% opacity% */
 }
 
-#resume {
-  text-align: left;
-  display: flex;
-  justify-content: left;
+.col-in-roota {
+  width: 58.33%;
+  text-align: unset;
 }
+
+#contact {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 
 #hero-work {
   background-color: #270810;
@@ -156,10 +234,10 @@ a:focus {
 
 #hero-contact {
   background-color: #270810;
-  padding: 20px 0;
+  padding: 40px 0;
   display: inline-block;
   width: auto;
-  text-align: left;
+  text-align: center;
 }
 
 #social {
@@ -170,8 +248,30 @@ a:focus {
   margin: 0 auto;
 }
 
+#meetdiana {
+  text-align: left;
+  margin: 0px;
+}
+
+
+#resume {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+
+
+#tools {
+  text-align: left;
+  margin: 0px;
+}
 
 #skills {
+  text-align: left;
+  margin: 0px;
+}
+
+#programs {
   text-align: left;
   margin: 0px;
 }
@@ -194,4 +294,115 @@ a:focus {
 #hero h1 {
   margin: 0;
   padding: 0.60em 0;
+}
+
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+
+selector {
+  position: relative;
+}
+
+selector {
+  float: right;
+}
+
+.container {
+
+  column-count: 1;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.logo {
+  max-width: 75px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.image-cropper {
+    max-width:400px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-cropper img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+    margin: 0 0 0 %;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+
+}
+
+#hero {
+  background-color: #ffe4c4;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
