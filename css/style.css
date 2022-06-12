@@ -8,19 +8,26 @@ Primary  Color (Dark Green): #181E19;
 Secondary Color (Turquoise): #49666D;
 Secondary Color (Green): #7C9885;
 Secondary Color (LimeGreen): #B5B682;
-Secondary Color (Coral): #D6B8A2;
+Secondary Color (Coral): #604D53;
 Secondary Color (White): #FFFFFF;
+Logo Color (Light Brown): 604D53;
 */
 
+html {
+  scroll-behavior: smooth;
+}
 
 header {
-  background-color: #B5B682;
-  margin-bottom: 10px;
+  background-color: #270810;
+  margin-bottom: 0px;
   position: fixed;
   width: 100%;
   display: block;
-  padding: 10px 0 4px;
-  margin-top: 0px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  padding: 10px 0 0 ;
+  z-index: 1;
 }
 
 
@@ -32,11 +39,23 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #270810;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 0px;
-  margin-top: 0px;
+  position: inherit;
+  padding-top: 0px;
+  z-index: -1;
+}
+
+.wrapper {
+    width:100%;
+    position:fixed;
+    z-index:10;
+    background:inherit;
+}
+
+.bottom-wrapper {
+    width:100%;
+    padding-top:100px;
+    z-index:5;
+    overflow:relative;
 }
 
 p {
@@ -52,7 +71,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  background-color: #270810;
+  background-color: #604D53;
   margin-bottom: 10px;
   position:
   width: 100%;
@@ -122,15 +141,15 @@ a:hover {
 }
 
 a:visited { /* visited link */
-  color: #D6B8A2;
+  color: #ffffff;
 }
 a:active { /* selected link */
-  color: #270810;
+  color: #604D53;
 }
 
 a:hover,
 a:focus {
-  color: #270810;
+  color: #604D53;
   text-decoration: none;
 }
 
@@ -144,7 +163,7 @@ a:focus {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
-  border-bottom: 2px solid #transparent; /* width of the border, type, color */
+  border-bottom: 0px solid #transparent; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -157,7 +176,7 @@ a:focus {
   background-color: #270810;
   color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #270810;
+  border: 0px solid #270810;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -166,16 +185,16 @@ a:focus {
 }
 
 .button.roota:hover {
-  background-color: #270810;
+  background-color: #604D53;
   color: #ffffff;
-  opacity: 0.70; /* 100% opacity% */
+  opacity: 1; /* 100% opacity% */
 }
 
 .button.contact {
   background-color: #270810;
   color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #270810;
+  border: 0px solid #270810;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -184,9 +203,9 @@ a:focus {
 }
 
 .button.contact:hover {
-  background-color: #270810;
+  background-color: #604D53;
   color: #ffffff;
-  opacity: 0.70; /* 100% opacity% */
+  opacity: 1; /* 100% opacity% */
 }
 
 
@@ -195,13 +214,13 @@ a:focus {
   background-color: 270810;
   color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #transparent;
+  border: 0px solid #transparent;
 }
 
 .button.resume:hover {
-  background-color: #270810;
+  background-color: #604D53;
   color: #ffffff;
-  opacity: 0.70; /* 100% opacity% */
+  opacity: 1; /* 100% opacity% */
 }
 
 .col-in-roota {
@@ -309,9 +328,13 @@ selector {
 }
 
 .container {
+  padding: 15px;
+}
 
-  column-count: 1;
-  padding: 0 15px;
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -366,21 +389,73 @@ selector {
 
 
 
+nav {
+  display: inline-block;
+  width: 100%;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(134, 134, 134, 0.192);
+}
+.navtoggle.responsive li:last-child {
+  padding: 10px;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 20px;
+  padding-right: 0;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-
-
-
 nav > ul > li > a {
-  display: inline-block;
-  padding: 5px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-
+  font-weight: 500;
+  color: #604D53;
 }
+nav > ul > li > a:active {
+  color: #604D53;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+nav > ul {
+  margin: 1em 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+
 
 #hero {
   background-color: #ffe4c4;
