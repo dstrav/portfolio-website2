@@ -26,7 +26,7 @@ header {
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  padding: 10px 0 0 ;
+  padding: 0px ;
   z-index: 1;
 }
 
@@ -42,6 +42,7 @@ body {
   position: inherit;
   padding-top: 0px;
   z-index: -1;
+  text-align:center;
 }
 
 .wrapper {
@@ -155,7 +156,7 @@ a:focus {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #270810;
+  background-color: #604D53;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding-top: 10px;
@@ -163,64 +164,68 @@ a:focus {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
+  margin-left: 20px;
   border-bottom: 0px solid #transparent; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
-  opacity: 1.0; /* 100% opacity% */
-  text-decoration: none;
+  opacity: .5; /* 70% opacity% */
 }
 
 .button.roota {
-  background-color: #270810;
+  background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
-  border: 0px solid #270810;
+  border: 0px solid #604D53;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 20px;
   border-radius: 5px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.roota:hover {
-  background-color: #604D53;
-  color: #ffffff;
-  opacity: 1; /* 100% opacity% */
+  opacity: .5; /* 100% opacity% */
 }
 
 .button.contact {
-  background-color: #270810;
+  background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
-  border: 0px solid #270810;
+  border: 0px solid #604D53;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 20px;
   border-radius: 5px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.contact:hover {
-  background-color: #604D53;
-  color: #ffffff;
-  opacity: 1; /* 100% opacity% */
+  opacity: .5; /* 100% opacity% */
 }
 
 
 
 .button.resume {
-  background-color: 270810;
+  background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
   border: 0px solid #transparent;
+  margin-left: 20px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.resume:hover {
-  background-color: #604D53;
-  color: #ffffff;
-  opacity: 1; /* 100% opacity% */
+  opacity: .5; /* 100% opacity% */
 }
 
 .col-in-roota {
@@ -238,7 +243,7 @@ a:focus {
 #hero-work {
   background-color: #270810;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: auto;
   text-align: center;
 }
@@ -246,7 +251,7 @@ a:focus {
 #hero-about {
   background-color: #270810;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: auto;
   text-align: left;
 }
@@ -254,7 +259,7 @@ a:focus {
 #hero-contact {
   background-color: #270810;
   padding: 40px 0;
-  display: inline-block;
+  display: block;
   width: auto;
   text-align: center;
 }
@@ -351,27 +356,67 @@ selector {
   display: table;
 }
 
+.col-md-4 {
+  width: 33.33%;
+}
+.col-md-6 {
+  width: 50%;
+  padding-right: 20px;
+
+}
+.col-md-6.image {
+  text-align: right;
+}
+.col-md-6 img {
+  max-width: 470px;
+}
+.col-md-6 svg {
+  max-width: 470px;
+}
+
 .logo {
   max-width: 75px;
+  align-self: left;
+}
+
+.socialmedialogo {
+  max-width: 50px;
+  padding: 10px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+
+.projectpicture {
+  width: 50%;
+}
+
+.socialmedialogo:hover {
+  opacity: .5; /* 50% opacity% */
 }
 
 .footer {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .image-cropper {
     max-width:400px;
     height: auto;
-    position: relative;
-    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid #270810;
 }
 
 .image-cropper img{
     display: block;
-    margin: 0 auto;
     height: auto;
-    width: 50%;
-    margin: 0 0 0 %;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #270810;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -419,7 +464,7 @@ nav {
   padding-right: 0;
 }
 nav > ul {
-  list-style-type: none;
+  list-style-type:circle;
   padding: 0;
   margin: 0;
 }
@@ -480,4 +525,228 @@ nav > ul > li {
 
 main {
   padding-top: 133px;
+}
+
+
+}
+.centerme {
+  text-align: center;
+}
+
+
+
+
+
+img {
+  width:relative;
+  height:relative;
+
+}
+
+.projectimg {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  object-fit:fill;
+}
+
+.projectbox {
+  height: 500px;
+  width: auto;
+  padding: 30px;
+  border: 2px solid #604D53;
+  object-position: center;
+
+}
+
+
+.fill {
+  object-fit: fill;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.none {
+  object-fit: none;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  main {
+    padding-top: 91px;
+  }
+  .profilepicture {
+    width: 30%;
+  }
+  #hero span {
+    display: block;
+  }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-6 {
+    width: 50%;
+    padding-right: 20px;
+  }
+  .col-md-6.image {
+    text-align: right;
+  }
+  .col-md-6 img {
+    max-width: 470px;
+  }
+  .col-md-6 svg {
+    max-width: 470px;
+  }
+  .userflow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .solution1 {
+    float: right;
+  }
+  .solution2 {
+    float: left;
+  }
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 40%;
+  }
+  .col-lg-2 {
+    width: 15%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+/* ==============================
+Berlin Illustration Animation Example
+================================= */
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* ==============================
+Music Illustration Animation Example
+================================= */
+.musicillustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes stars-grow {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+.stars {
+  animation: 1s stars-grow infinite alternate linear;
+}
+@keyframes notes-rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+.music-notes {
+  animation: 1s notes-rotate infinite alternate linear;
 }
