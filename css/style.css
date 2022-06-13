@@ -376,7 +376,6 @@ selector {
 
 .logo {
   max-width: 75px;
-  align-self: left;
 }
 
 .socialmedialogo {
@@ -604,9 +603,7 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-  .logo {
-    margin-top: 0;
-  }
+
   main {
     padding-top: 91px;
   }
@@ -625,9 +622,15 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
+  .col-md-1 {
+    width: 100%;
+  }
+
   .col-md-4 {
     width: 33.33%;
   }
+
   .col-md-6 {
     width: 50%;
     padding-right: 20px;
