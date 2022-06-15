@@ -42,7 +42,7 @@ body {
   position: inherit;
   padding-top: 0px;
   z-index: -1;
-  text-align:center;
+
 }
 
 .wrapper {
@@ -64,6 +64,7 @@ p {
   padding-bottom: 0px;
   padding-left: 20px;
   padding-right: 0px;
+  text-align:center;
 }
 
 h1, h2, h3, h4 {
@@ -74,7 +75,6 @@ h1 {
   font-weight: 700;
   background-color: #604D53;
   margin-bottom: 10px;
-  position:
   width: 100%;
   display: block;
   padding-top: 20px;
@@ -82,6 +82,8 @@ h1 {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: center;
+  text-align:center;
+  border-radius: 60px;
 
 }
 
@@ -90,7 +92,6 @@ h2 {
   font-weight: 700;
   background-color: #ffffff;
   margin-bottom: 10px;
-  position:
   width: 100%;
   display: block;
   padding-top: 20px;
@@ -98,12 +99,13 @@ h2 {
   padding-left: 20px;
   padding-right: 0px;
   margin-top: 0px;
+  text-align:center;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  border-bottom: 3px solid #270810
+  border-bottom: 0px solid #270810;
   background-color: #ffffff;
   margin-bottom: 10px;
   position:
@@ -114,6 +116,7 @@ h3 {
   padding-left: 20px;
   padding-right: 0px;
   margin-top: 0px;
+  text-align:center;
 }
 h4 {
   font-size: 1.35em;
@@ -124,6 +127,7 @@ h4 {
   padding-left: 20px;
   padding-right: 0px;
   margin-top: 0px;
+  text-align:center;
 }
 
 img {
@@ -131,14 +135,19 @@ img {
 
 }
 
+ul.nbullets {
+  list-style-type:circle; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
 
 a {
   color: #270810;
-  text-decoration: none; /* No underlining */
+  text-decoration:none;; /* No underlining */
 }
 a:hover {
   color: #270810;
-  text-decoration: none; /* Underlining when hovering over a link */
+  text-decoration:none;; /* Underlining when hovering over a link */
 }
 
 a:visited { /* visited link */
@@ -154,8 +163,20 @@ a:focus {
   text-decoration: none;
 }
 
+.a-1 {
+  list-style-type: circle;; /* bullet points for tools */
+}
+
+textarea {
+  display: block;
+}
+
+.bullets li {
+ list-style-type: circle;
+}
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display:inline;; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #604D53;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
@@ -163,11 +184,12 @@ a:focus {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 5px;
-  margin-left: 20px;
+  border-radius: 30px;
+  margin:auto;
   border-bottom: 0px solid #transparent; /* width of the border, type, color */
   transition-duration: 0.2s;
   transition-property: opacity;
+  text-align:center;
 }
 
 .button:hover {
@@ -175,6 +197,7 @@ a:focus {
 }
 
 .button.roota {
+  display:inline;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -184,7 +207,7 @@ a:focus {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
@@ -194,6 +217,7 @@ a:focus {
 }
 
 .button.contact {
+  display:inline;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -203,7 +227,7 @@ a:focus {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
@@ -215,13 +239,16 @@ a:focus {
 
 
 .button.resume {
+  display:inline;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
   border: 0px solid #transparent;
   margin-left: 20px;
+  border-radius: 30px;
   transition-duration: 0.2s;
   transition-property: opacity;
+  text-align: center;
 }
 
 .button.resume:hover {
@@ -235,7 +262,6 @@ a:focus {
 
 #contact {
   text-align: center;
-  display: flex;
   justify-content: center;
 }
 
@@ -346,10 +372,6 @@ selector {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
 .row::after {
   content: "";
   clear: both;
@@ -360,8 +382,9 @@ selector {
   width: 33.33%;
 }
 .col-md-6 {
-  width: 50%;
-  padding-right: 20px;
+  width: 40%;
+
+
 
 }
 .col-md-6.image {
@@ -498,6 +521,7 @@ nav > ul > li {
 }
 .navtoggle li:last-child {
   display: none;
+  list-style-type:circle;
 }
 
 
@@ -632,8 +656,8 @@ Medium devices (640px and larger)
   }
 
   .col-md-6 {
-    width: 50%;
-    padding-right: 20px;
+    width: 49%;
+
   }
   .col-md-6.image {
     text-align: right;
@@ -662,7 +686,8 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .col-lg-5 {
-    width: 40%;
+    width: 49%;
+
   }
   .col-lg-2 {
     width: 15%;
@@ -682,47 +707,7 @@ Large devices (1024px or larger)
     display: table;
   }
 }
-/* ==============================
-Berlin Illustration Animation Example
-================================= */
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-  to {
-    fill: #f76414;
-  }
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
+
 /* ==============================
 Music Illustration Animation Example
 ================================= */
