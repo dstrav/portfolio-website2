@@ -190,7 +190,7 @@ textarea {
 }
 
 .button {
-  display:inline;; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display:flex;; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #604D53;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
@@ -199,11 +199,12 @@ textarea {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 30px;
-  margin:auto;
   border-bottom: 0px solid #transparent; /* width of the border, type, color */
   transition-duration: 0.2s;
   transition-property: opacity;
   text-align:center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover {
@@ -211,7 +212,7 @@ textarea {
 }
 
 .button.roota {
-  display:inline;
+  display:flex;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -220,10 +221,12 @@ textarea {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 20px;
   border-radius: 30px;
   transition-duration: 0.2s;
   transition-property: opacity;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button.roota:hover {
@@ -231,7 +234,7 @@ textarea {
 }
 
 .button.contact {
-  display:inline;
+  display:flex;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -240,10 +243,11 @@ textarea {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 20px;
   border-radius: 30px;
   transition-duration: 0.2s;
   transition-property: opacity;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button.contact:hover {
@@ -253,16 +257,17 @@ textarea {
 
 
 .button.resume {
-  display:inline;
+  display:flex;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
   border: 0px solid #transparent;
-  margin-left: 20px;
   border-radius: 30px;
   transition-duration: 0.2s;
   transition-property: opacity;
-  text-align: center;
+  text-align: review;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button.resume:hover {
@@ -582,7 +587,7 @@ nav > ul > li {
 
 }
 
-#hero-roota2 {
+#hero-roota {
   background-color: #49666D;
 
 }
