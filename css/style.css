@@ -61,7 +61,7 @@ body {
 
 p {
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 0px;
   text-align:center;
@@ -85,17 +85,18 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  background-color: #604D53;
+
   margin-bottom: 10px;
   width: 100%;
   display: block;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   margin:auto;
   text-align:center;
   border-radius: 0px;
+  background-color: #transparent
 
 }
 
@@ -112,6 +113,7 @@ h2 {
   padding-right: 0px;
   margin-top: 0px;
   text-align:center;
+
 }
 
 h3 {
@@ -411,6 +413,7 @@ selector {
 
 .logo {
   max-width: 75px;
+
 }
 
 .socialmedialogo {
@@ -571,6 +574,22 @@ nav > ul > li {
 
 #hero {
   background-color: #604D53;
+
+}
+
+#hero-roota {
+  background-color: #49666D;
+
+}
+
+#hero-roota2 {
+  background-color: #49666D;
+
+}
+
+#hero-ccp {
+  background-color: #142351;
+
 }
 
 #hero h1 {
