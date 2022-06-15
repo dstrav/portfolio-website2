@@ -65,6 +65,18 @@ p {
   padding-left: 20px;
   padding-right: 0px;
   text-align:center;
+  margin:auto;
+}
+
+
+.aboutme h2 {
+  text-align: center;
+}
+.abouttitle {
+  text-align: center;
+  padding: px 10;
+  display: inline-block;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -81,7 +93,7 @@ h1 {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: center;
+  margin:auto;
   text-align:center;
   border-radius: 0px;
 
@@ -446,18 +458,26 @@ selector {
     border-radius: 50%;
 }
 
+hr {
+height:1px;
+background-color: #604D53;
+display:flex;
+width:1200px;
+}
+
 .image-cropper2 {
     max-width:400px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     border: 0px solid #270810;
+    text-align: center;
 }
 
 .image-cropper2 img{
     display: block;
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #270810;
@@ -466,6 +486,8 @@ selector {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    text-align:
+
 }
 
 #hero h1 {
@@ -548,7 +570,7 @@ nav > ul > li {
 
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #604D53;
 }
 
 #hero h1 {
@@ -557,12 +579,12 @@ nav > ul > li {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #604D53;
   padding: 20px 0;
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #604D53;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
