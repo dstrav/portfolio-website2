@@ -191,6 +191,8 @@ textarea {
 
 .button {
   display:flex;; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  justify-content:center;
+  width:95%;
   background-color: #604D53;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
@@ -213,6 +215,8 @@ textarea {
 
 .button.roota {
   display:flex;
+  justify-content:center;
+  width:95%;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -230,11 +234,40 @@ textarea {
 }
 
 .button.roota:hover {
-  opacity: .5; /* 100% opacity% */
+  background-color: #49666D;
+  opacity: 1.0; /* 100% opacity% */
+}
+
+
+.button.ccp {
+  display:flex;
+  justify-content:center;
+  width:95%;
+  background-color: #604D53;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 0px solid #604D53;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.ccp:hover {
+  background-color: #142351;
+  opacity: 1.0; /* 100% opacity% */
 }
 
 .button.contact {
   display:flex;
+  justify-content:center;
+  width:95%;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -258,6 +291,8 @@ textarea {
 
 .button.resume {
   display:flex;
+  justify-content:center;
+  width:95%;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -670,6 +705,11 @@ img {
 .scale-down {
   object-fit: scale-down;
 }
+
+
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
