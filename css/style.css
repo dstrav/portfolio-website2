@@ -436,7 +436,7 @@ selector {
   width: 33.33%;
 }
 .col-md-6 {
-  width: 40%;
+  width: 100%;
 
 
 
@@ -573,7 +573,7 @@ nav {
   padding-right: 0;
 }
 nav > ul {
-  list-style-type:circle;
+
   padding: 0;
   margin: 0;
 }
@@ -606,10 +606,7 @@ nav > ul > li {
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
-.navtoggle li:last-child {
-  display: none;
-  list-style-type:circle;
-}
+
 
 
 #hero {
@@ -820,8 +817,8 @@ Large devices (1024px or larger)
 Music Illustration Animation Example
 ================================= */
 .musicillustration {
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   height: auto;
 }
 @keyframes stars-grow {
