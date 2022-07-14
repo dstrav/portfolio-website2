@@ -563,7 +563,7 @@ nav {
   border-top: 1px solid rgba(134, 134, 134, 0.192);
 }
 .navtoggle.responsive li:last-child {
-  padding: 10px;
+  padding: 0 0 10px;
 }
 .navtoggle li .icon {
   position: absolute;
@@ -603,9 +603,7 @@ nav > ul {
 nav > ul > li {
   display: inline-block;
 }
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+
 
 
 
@@ -723,9 +721,7 @@ Medium devices (640px and larger)
   nav > ul {
     margin: 1em 0;
   }
-  nav > ul > li {
-    display: inline-block;
-  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -736,6 +732,7 @@ Medium devices (640px and larger)
   main {
     padding-top: 91px;
   }
+
   .profilepicture {
     width: 30%;
   }
