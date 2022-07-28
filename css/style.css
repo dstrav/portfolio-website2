@@ -12,7 +12,6 @@ Secondary Color (Coral): #604D53;
 Secondary Color (White): #FFFFFF;
 Logo Color (Light Brown): 604D53;
 */
-
 html {
   scroll-behavior: smooth;
 }
@@ -26,37 +25,38 @@ header {
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  padding: 0px ;
+  padding: 0px;
   z-index: 1;
 }
-
 
 body {
   background-color: #ffffff;
   font-family: 'IBM+lex+Sans+Thai+Looped', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #270810;
   display: block;
   position: inherit;
   padding-top: 0px;
   z-index: -1;
-
 }
 
 .wrapper {
-    width:100%;
-    position:fixed;
-    z-index:10;
-    background:inherit;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background: inherit;
 }
 
 .bottom-wrapper {
-    width:100%;
-    padding-top:100px;
-    z-index:5;
-    overflow:relative;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 5;
+  overflow: relative;
 }
 
 p {
@@ -64,14 +64,14 @@ p {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 0px;
-  text-align:center;
-  margin:auto;
+  text-align: center;
+  margin: auto;
 }
-
 
 .aboutme h2 {
   text-align: center;
 }
+
 .abouttitle {
   text-align: center;
   padding: px 10;
@@ -82,10 +82,10 @@ p {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-
   margin-bottom: 10px;
   width: 100%;
   display: block;
@@ -93,11 +93,10 @@ h1 {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  margin:auto;
-  text-align:center;
+  margin: auto;
+  text-align: center;
   border-radius: 0px;
   background-color: #transparent
-
 }
 
 h2 {
@@ -112,8 +111,7 @@ h2 {
   padding-left: 20px;
   padding-right: 0px;
   margin-top: 0px;
-  text-align:center;
-
+  text-align: center;
 }
 
 h3 {
@@ -122,7 +120,6 @@ h3 {
   border-bottom: 0px solid #270810;
   background-color: #ffffff;
   margin-bottom: 10px;
-  position:
   width: 100%;
   display: block;
   padding-top: 20px;
@@ -130,8 +127,9 @@ h3 {
   padding-left: 20px;
   padding-right: 0px;
   margin-top: 0px;
-  text-align:center;
+  text-align: center;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -141,33 +139,43 @@ h4 {
   padding-left: 20px;
   padding-right: 0px;
   margin-top: 0px;
-  text-align:center;
+  text-align: center;
 }
 
 img {
   width: 100%;
-
 }
 
 ul.nbullets {
-  list-style-type:circle; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: circle;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
 }
 
 a {
   color: #270810;
-  text-decoration:none;; /* No underlining */
-}
-a:hover {
-  color: #270810;
-  text-decoration:none;; /* Underlining when hovering over a link */
+  text-decoration: none;
+  ;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
+a:hover {
+  color: #270810;
+  text-decoration: none;
+  ;
+  /* Underlining when hovering over a link */
+}
+
+a:visited {
+  /* visited link */
   color: #ffffff;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #604D53;
 }
 
@@ -178,7 +186,9 @@ a:focus {
 }
 
 .a-1 {
-  list-style-type: circle;; /* bullet points for tools */
+  list-style-type: circle;
+  ;
+  /* bullet points for tools */
 }
 
 textarea {
@@ -186,37 +196,42 @@ textarea {
 }
 
 .bullets li {
- list-style-type: circle;
+  list-style-type: circle;
 }
 
 .button {
-  display:flex;; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  justify-content:center;
-  width:95%;
+  display: flex;
+  ;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  justify-content: center;
+  width: 95%;
   background-color: #604D53;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 30px;
-  border-bottom: 0px solid #transparent; /* width of the border, type, color */
+  border-bottom: 0px solid #transparent;
+  /* width of the border, type, color */
   transition-duration: 0.2s;
   transition-property: opacity;
-  text-align:center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .button:hover {
-  opacity: .5; /* 70% opacity% */
+  opacity: .5;
+  /* 70% opacity% */
 }
 
 .button.roota {
-  display:flex;
-  justify-content:center;
-  width:95%;
+  display: flex;
+  justify-content: center;
+  width: 95%;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -235,14 +250,14 @@ textarea {
 
 .button.roota:hover {
   background-color: #49666D;
-  opacity: 1.0; /* 100% opacity% */
+  opacity: 1.0;
+  /* 100% opacity% */
 }
 
-
 .button.ccp {
-  display:flex;
-  justify-content:center;
-  width:95%;
+  display: flex;
+  justify-content: center;
+  width: 95%;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -261,13 +276,14 @@ textarea {
 
 .button.ccp:hover {
   background-color: #142351;
-  opacity: 1.0; /* 100% opacity% */
+  opacity: 1.0;
+  /* 100% opacity% */
 }
 
 .button.contact {
-  display:flex;
-  justify-content:center;
-  width:95%;
+  display: flex;
+  justify-content: center;
+  width: 95%;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -284,15 +300,14 @@ textarea {
 }
 
 .button.contact:hover {
-  opacity: .5; /* 100% opacity% */
+  opacity: .5;
+  /* 100% opacity% */
 }
 
-
-
 .button.resume {
-  display:flex;
-  justify-content:center;
-  width:95%;
+  display: flex;
+  justify-content: center;
+  width: 95%;
   background-color: #604D53;
   color: #ffffff;
   text-transform: uppercase;
@@ -306,7 +321,8 @@ textarea {
 }
 
 .button.resume:hover {
-  opacity: .5; /* 100% opacity% */
+  opacity: .5;
+  /* 100% opacity% */
 }
 
 .col-in-roota {
@@ -318,7 +334,6 @@ textarea {
   text-align: center;
   justify-content: center;
 }
-
 
 #hero-work {
   background-color: #270810;
@@ -357,13 +372,11 @@ textarea {
   margin: 0px;
 }
 
-
 #resume {
   text-align: left;
   display: flex;
   justify-content: left;
 }
-
 
 #tools {
   text-align: left;
@@ -401,7 +414,8 @@ textarea {
 }
 
 selector {
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 0 auto;
+  /* No spacing to top and bottom and auto spacing to left and right */
 }
 
 selector {
@@ -423,7 +437,8 @@ selector {
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -435,25 +450,25 @@ selector {
 .col-md-4 {
   width: 33.33%;
 }
+
 .col-md-6 {
   width: 100%;
-
-
-
 }
+
 .col-md-6.image {
   text-align: right;
 }
+
 .col-md-6 img {
   max-width: 470px;
 }
+
 .col-md-6 svg {
   max-width: 470px;
 }
 
 .logo {
   max-width: 75px;
-
 }
 
 .socialmedialogo {
@@ -463,108 +478,111 @@ selector {
   transition-property: opacity;
 }
 
-
 .projectpicture {
   width: 50%;
 }
 
 .socialmedialogo:hover {
-  opacity: .5; /* 50% opacity% */
+  opacity: .5;
+  /* 50% opacity% */
 }
 
 .footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .image-cropper {
-    max-width:400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px solid #270810;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid #270810;
 }
 
-.image-cropper img{
-    display: block;
-    height: auto;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #270810;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
+.image-cropper img {
+  display: block;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #270810;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
 
 hr {
-height:1px;
-background-color: #604D53;
-display:flex;
-width:1200px;
+  height: 1px;
+  background-color: #604D53;
+  display: flex;
+  width: 1200px;
 }
 
 .image-cropper2 {
-    max-width:400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px solid #270810;
-    text-align: center;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid #270810;
+  text-align: center;
 }
 
-.image-cropper2 img{
-    display: block;
-    height: 250px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #270810;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    text-align:
-
+.image-cropper2 img {
+  display: block;
+  height: 250px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #270810;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  text-align:
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 .center {
   text-align: center;
 }
 
-
-
 nav {
   display: inline-block;
   width: 100%;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(134, 134, 134, 0.192);
 }
+
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -572,59 +590,56 @@ nav {
   font-size: 20px;
   padding-right: 0;
 }
-nav > ul {
 
+nav>ul {
   padding: 0;
   margin: 0;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
   color: #604D53;
 }
-nav > ul > li > a:active {
+
+nav>ul>li>a:active {
   color: #604D53;
 }
+
 nav {
   display: inline-block;
   width: 100%;
 }
-
 
 nav {
   width: auto;
   float: right;
   margin-top: 4px;
 }
-nav > ul {
+
+nav>ul {
   margin: 1em 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
 }
 
-
-
-
 #hero {
   background-color: #604D53;
-
 }
 
 #hero-roota {
   background-color: #49666D;
-
 }
 
 #hero-roota {
   background-color: #49666D;
-
 }
 
 #hero-ccp {
   background-color: #142351;
-
 }
 
 #hero h1 {
@@ -648,27 +663,20 @@ main {
   padding-top: 133px;
 }
 
-
-}
 .centerme {
   text-align: center;
 }
 
-
-
-
-
 img {
-  width:relative;
-  height:relative;
-
+  width: relative;
+  height: relative;
 }
 
 .projectimg {
   width: 50%;
   height: auto;
   margin: auto;
-  object-fit:fill;
+  object-fit: fill;
 }
 
 .projectbox {
@@ -677,9 +685,7 @@ img {
   padding: 30px;
   border: 2px solid #604D53;
   object-position: center;
-
 }
-
 
 .fill {
   object-fit: fill;
@@ -701,10 +707,6 @@ img {
   object-fit: scale-down;
 }
 
-
-
-
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -713,18 +715,22 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  nav > ul {
+
+  nav>ul {
     margin: 1em 0;
   }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
@@ -736,13 +742,16 @@ Medium devices (640px and larger)
   .profilepicture {
     width: 30%;
   }
+
   #hero span {
     display: block;
   }
+
   [class*="col-"] {
     float: left;
     padding-left: 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
@@ -759,84 +768,96 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 49%;
-
   }
+
   .col-md-6.image {
     text-align: right;
   }
+
   .col-md-6 img {
     max-width: 470px;
   }
+
   .col-md-6 svg {
     max-width: 470px;
   }
+
   .userflow {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   .solution1 {
     float: right;
   }
+
   .solution2 {
     float: left;
   }
 
-
-
-/* ==============================
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  .col-lg-5 {
-    width: 49%;
+  @media only screen and (min-width: 1024px) {
+    .col-lg-5 {
+      width: 49%;
+    }
 
-  }
-  .col-lg-2 {
-    width: 15%;
-  }
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  [class*="col-"] {
-    float: left;
-    padding-left: 10px;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
+    .col-lg-2 {
+      width: 15%;
+    }
 
-/* ==============================
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding-left: 10px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  /* ==============================
 Music Illustration Animation Example
 ================================= */
-.musicillustration {
-  width: 80%;
-  max-width: 80%;
-  height: auto;
-}
-@keyframes stars-grow {
-  from {
-    transform: scale(1, 1);
+  .musicillustration {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
   }
-  to {
-    transform: scale(1.1, 1.1);
+
+  @keyframes stars-grow {
+    from {
+      transform: scale(1, 1);
+    }
+
+    to {
+      transform: scale(1.1, 1.1);
+    }
   }
-}
-.stars {
-  animation: 1s stars-grow infinite alternate linear;
-}
-@keyframes notes-rotate {
-  from {
-    transform: rotateZ(0deg);
+
+  .stars {
+    animation: 1s stars-grow infinite alternate linear;
   }
-  to {
-    transform: rotateZ(10deg);
+
+  @keyframes notes-rotate {
+    from {
+      transform: rotateZ(0deg);
+    }
+
+    to {
+      transform: rotateZ(10deg);
+    }
   }
-}
-.music-notes {
-  animation: 1s notes-rotate infinite alternate linear;
-}
+
+  .music-notes {
+    animation: 1s notes-rotate infinite alternate linear;
+  }
